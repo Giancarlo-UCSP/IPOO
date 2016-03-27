@@ -2,6 +2,9 @@
 
 main(){
 	int c,espacios,tabs,lineas;
+	espacios=0;
+	tabs=0;
+	lineas=0;
 	while ((c=getchar())!=EOF){
 		if (c==' ')
 			espacios=espacios+1;
