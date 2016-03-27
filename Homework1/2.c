@@ -15,4 +15,3 @@ main(){
 	}
 	printf ("Espacios: %d. Tabs: %d. Líneas: %d.\n",espacios,tabs,lineas);
 }
-
