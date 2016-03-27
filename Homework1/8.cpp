@@ -1,29 +1,39 @@
-#include <stdio.h>
 #include <iostream>
 
 using namespace std;
 
 int main(){
-	int numeros[3];
-	for (int i=0;i<2;i++){
-		cout<<"Introduce un número: ";
-		cin>>numeros[i];
-	}
-	if (numeros[i]>numeros[i+1]){
-		if (numeros[i]>numeros[i+2]){
-			cout<<"El orden es: ",numeros[i+2]," ",numeros[i+1]," ",numeros[i]<<endl;
+	int a,b,c;
+	cout<<"Introduce el primer número: ";
+	cin>>a;
+	cout<<"Introduce el segundo número: ";
+	cin>>b;
+	cout<<"Introduce el tercer número: ";
+	cin>>c;
+	
+	if (a>b){
+		if (b>c){
+			cout<<"El orden es: "<<c<<", "<<b<<", "<<a<<endl;
 		}
 		else{
-			cout<<"El orden es: ",numeros[i+1]," ",numeros[i+2]," ",numeros[i]<<endl;
+			if (a>c){
+				cout<<"El orden es: "<<b<<", "<<c<<", "<<a<<endl;
+			}
+			else{
+				cout<<"El orden es: "<<b<<", "<<a<<", "<<c<<endl;
+			}
 		}
 	}
 	else{
-		if (numeros[i]>numeros[i+2]){
-			cout<<"El orden es: ",numeros[i+2]," ",numeros[i]," ",numeros[i+1]<<endl;
+		if (a>c){
+			cout<<"El orden es: "<<c<<", "<<a<<", "<<b<<endl;
 		}
 		else{
-			if (numeros[i+1]<numeros[i+2]){
-				cout<<"El orden es: ",numeros[i]," ",numeros[i+1]," ",numeros[i+2]<<endl;
+			if (b>c){
+				cout<<"El orden es: "<<a<<", "<<c<<", "<<b<<endl;
+			}
+			else{
+				cout<<"El orden es: "<<a<<", "<<b<<", "<<c<<endl;
 			}
 		}
 	}
