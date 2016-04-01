@@ -9,7 +9,7 @@ float conversor(float f){
 	return c;
 }
 
-int imprimir(float f, float c){
+void imprimir(float f, float c){
 	printf("%3.0f \t\t %6.1f \n", f, c);
 }
 
