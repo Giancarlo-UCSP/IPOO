@@ -1,8 +1,7 @@
 #include<stdio.h>
 #define TAMTAB 8
 
-int main(void)
-{
+int main(){
 	int blancos,pos,c;
 	
 	blancos = 0;
