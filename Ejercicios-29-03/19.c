@@ -4,8 +4,7 @@
 int rgetline(char line[],int lim);
 void reverse(char rline[]);
 
-int main(void)
-{
+int main(){
 	int len;
 	char line[MAXLINE];
 	
