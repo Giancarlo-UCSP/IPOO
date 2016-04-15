@@ -11,9 +11,7 @@ void push(double);
 double pop(void);
 void mathfnc(char []);
 
-/* reverse polish calculator */
-
-int main(void)
+int main()
 {
     int type;
     double op2,op1;
@@ -187,8 +185,6 @@ void ungetch(int c)
     else
         buf[bufp++] = c;
 }
-
-/* mathfnc: check the string s for supported math function */
 
 void mathfnc(char s[])
 {
