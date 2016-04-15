@@ -7,11 +7,9 @@
 
 int getop(char []);
 void push(double);
-double pop(void);
+double pop();
 
-/* reverse polish calculator */
-
-int main(void)
+int main()
 {
     int type;
     double op2;
